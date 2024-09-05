@@ -1,0 +1,101 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #d8b5e2;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #fff;
+    background-color: #7d42b4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p {
+    color: #d8b5e2;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+#fetch-button {
+    background-color: #7d42b4;
+    color: #d8b5e2;
+    font-size: 22px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fetch-button:hover {
+    background-color: #5b2e88;
+}
+
+/* Container de imagem */
+#image-container {
+    margin: 20px auto;
+    width: 60%;
+}
+
+#image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Rodapé */
+#footer {
+    background-color: #7d42b4;
+    color: #d8b5e2;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+#roda-expo {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#roda-nome {
+    font-size: 14px;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    #fetch-button {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #image-container {
+        width: 90%;
+    }
+}
